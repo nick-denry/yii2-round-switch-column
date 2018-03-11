@@ -1,6 +1,6 @@
 <?php
 
-namespace nickdenry\toggle;
+namespace nickdenry\grid;
 
 /**
  * This is just an example.
