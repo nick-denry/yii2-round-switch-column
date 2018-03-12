@@ -5,7 +5,7 @@
  * @author Nick Denry
  */
 
-namespace nickdenry\grid\roundToggle;
+namespace nickdenry\grid\toggle;
 
 use Yii;
 use yii\grid\DataColumn;
