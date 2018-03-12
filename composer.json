@@ -28,7 +28,7 @@
     },
     "autoload": {
         "psr-4": {
-            "nickdenry\\grid\\": "src"
+            "nickdenry\\grid\\roundToggle": "src"
         }
     }
 }
