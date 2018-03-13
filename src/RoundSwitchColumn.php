@@ -18,12 +18,16 @@ use yii\web\View;
  */
 class RoundSwitchColumn extends DataColumn
 {
+    public $action = 'toggle';
+
     public function init()
     {
-        $this->filter = [
-            "1" => Yii::t('yii', 'Yes'),
-            "0" => Yii::t('yii', 'No'),
-        ];
+        if (empty($this->filter)) {
+            $this->filter = [
+                "1" => Yii::t('yii', 'Yes'),
+                "0" => Yii::t('yii', 'No'),
+            ];
+        }
         parent::init();
     }
     /**
@@ -31,7 +35,6 @@ class RoundSwitchColumn extends DataColumn
      */
     protected function renderDataCellContent($model)
     {
-
-        return Yii::$app->view->render('@nickdenry/grid/roundToggle/views/switch', ['model' => $model]);
+        return Yii::$app->view->render('@nickdenry/grid/toggle/views/switch', ['model' => $model]);
     }
 }
