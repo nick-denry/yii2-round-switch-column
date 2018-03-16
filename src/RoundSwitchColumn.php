@@ -45,24 +45,11 @@ class RoundSwitchColumn extends DataColumn
     }
 
     /**
-     * Check if model toggle attribute is equal to onValue or true (active)
-     * @param ActiveRecord $model
-     * @param string $attribute model attribute name
-     * @return boolean
-     */
-    protected function isChecked($model, $attribute)
-    {
-        $onValue = ModelHelper::getToggleValue($model, $attribute);
-        return $model->{$attribute} == $onValue ? true : false;
-    }
-
-
-    /**
      * {@inheritdoc}
      */
     protected function renderDataCellContent($model, $key, $index)
     {
-        $checked = $this->isChecked($model, $this->attribute);
+        $checked = ModelHelper::isChecked($model, $this->attribute);
         return Yii::$app->view->render('@nickdenry/grid/toggle/views/switch', [
             'model' => $model,
             'checked' => $checked,

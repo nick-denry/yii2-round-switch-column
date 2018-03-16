@@ -35,4 +35,16 @@ class ModelHelper
         }
         return $type == RoundSwitchModule::SWITCH_KEY_ON ? true : false;
     }
+
+    /**
+     * Check if model toggle attribute is equal to onValue or true (active)
+     * @param ActiveRecord $model
+     * @param string $attribute model attribute name
+     * @return boolean
+     */
+    public static function isChecked($model, $attribute)
+    {
+        $onValue = self::getToggleValue($model, $attribute);
+        return $model->{$attribute} == $onValue ? true : false;
+    }
 }
