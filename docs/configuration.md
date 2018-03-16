@@ -1,8 +1,8 @@
 Configuration
 ---
-### Example
+### 1. Module config
 
-1. Counfigure module in your app config ass follow:
+Counfigure module in your app config as follow:
 ```php
 'modules' => [
     'roundSwitch' => [
@@ -11,7 +11,9 @@ Configuration
 ]
 ```
 
-2. Add following line to your GridView view
+### 2. Gridvew config
+
+Add following line to your GridView view
 ```php
 use nickdenry\grid\toggle\components\RoundSwitchColumn;
 ```
@@ -27,7 +29,9 @@ and setup your toggle attribute at GridView columns section
 ],
 ```
 
-3. Add toggleAction to your Controller
+### 3. Controller config
+
+Add toggleAction to your Controller
 
 ```php
 use nickdenry\grid\toggle\actions\ToggleAction;
