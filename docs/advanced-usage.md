@@ -1,1 +1,91 @@
+Advanced usage
+---
+
+### 1. Change action for column
+
+You colud define your own action for any toggle column like follows:
+
+Setup your toggle attribute at GridView columns section
+
+```php
+[
+    'class' => RoundSwitchColumn::class,
+    'attribute' => 'active',
+    'action' => 'toggle-and-send', // by default 'toggle'
+    /* other column options, i.e. */
+    'headerOptions' => ['width' => 150],
+],
+```
+
+and your controller
+
+```php
+public function actionToggleAndSend()
+{
+    /* Code */
+}
+```
+
+or define another toggleAction with custom params, i.e. custom primary key
+
+public function actions()
+{
+   return [
+        'toggle-extended' => [
+            'class' => ToggleAction::class,
+            'modelClass' => 'common\models\Model', // Your model class,
+            'pkColumn' => 'extended_id', // default 'id'
+        ],
+    ];
+}
+
+### 2. Setup custom column filter
+
+By default RoundSwitchColumn provides DropdownList filter with yes | no options.
+You could change this by set up column `filter` value as usual:
+
+```php
+[
+    'class' => RoundSwitchColumn::class,
+    'attribute' => 'active',
+    'action' => 'toggle-and-send', // by default 'toggle'
+    /* other column options, i.e. */
+    'headerOptions' => ['width' => 150],
+    'filter' => [
+        "someActive" => Active',
+        "someInactive" => 'Inactive',
+    ];
+],
+```
+
+defaut is:
+
+```php
+    'filter' => [
+        "1" => Yii::t('yii', 'Yes'),
+        "0" => Yii::t('yii', 'No'),
+    ];
+```
+
+### 3. Toggle any values, not boolean only
+
+If you want to toggle any other values except boolean, you could define `switchValues` property in your model
+
+```php
+public $switchValues = [
+    'is_published' => [ // Attribute name
+        'on' => 'yes', // Toggle active value any [scalar type](http://php.net/manual/en/language.types.intro.php)
+        'off' => 'no' // Toggle inactive value any [scalar type](http://php.net/manual/en/language.types.intro.php)
+    ]
+];
+```
+
+You could also change `switchValues` property name by define it in your app config module section
+
+```php
+'roundSwitch' => [
+    'class' => 'nickdenry\grid\toggle\Module',
+    'switchValues' => 'someAnotherPropertyName',
+],
+```
 
