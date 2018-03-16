@@ -5,7 +5,7 @@
  * @author Nick Denry
  */
 
-namespace nickdenry\grid\toggle;
+namespace nickdenry\grid\toggle\components;
 
 use Yii;
 use yii\grid\DataColumn;
