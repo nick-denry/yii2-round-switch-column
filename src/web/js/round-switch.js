@@ -1,14 +1,20 @@
+'use strict';
+
 $(document).ready(function(){
     $(document).on('click', '.yii2-round-switch', function(e) {
         e.preventDefault();
         e.stopPropagation();
-        $switch = $(this);
+        var $switch = $(this);
+        var $checkbox = $switch.find('input');
+        var $actionProvider = $('th[data-toggle-attribute="'+$checkbox.attr('name')+'"]');
+        var action = $actionProvider.data('toggleAction');
+        var attribute = $actionProvider.data('toggleAttribute');
         $switch.removeClass('error');
-        $checkbox = $switch.find('input');
         $.post(
-            $checkbox.data('action'),
+            action,
             {
                 id: $checkbox.data('id'),
+                attribute: attribute,
             },
         ).done(function() {
             $checkbox.prop('checked', !$checkbox.prop('checked'));
