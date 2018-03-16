@@ -26,7 +26,7 @@ public function actionToggleAndSend()
 }
 ```
 
-or define another toggleAction with custom params, i.e. custom primary key
+or define another toggleAction with custom params, i.e. model custom primary key
 
 ```php
 public function actions()
@@ -43,7 +43,7 @@ public function actions()
 
 ### 2. Setup custom column filter
 
-By default RoundSwitchColumn provides DropdownList filter with yes | no options.
+By default `RoundSwitchColumn` provides DropdownList filter with `yes | no` options.
 You could change this by set up column `filter` value as usual:
 
 ```php
@@ -76,11 +76,13 @@ If you want to toggle any other values except boolean, you could define `switchV
 ```php
 public $switchValues = [
     'is_published' => [ // Attribute name
-        'on' => 'yes', // Toggle active value any [scalar type](http://php.net/manual/en/language.types.intro.php)
-        'off' => 'no' // Toggle inactive value any [scalar type](http://php.net/manual/en/language.types.intro.php)
+        'on' => 'yes', // Toggle active value
+        'off' => 'no' // Toggle inactive value
     ]
 ];
 ```
+
+Values could be any [scalar type](http://php.net/manual/en/language.types.intro.php)
 
 You could also change `switchValues` property name by define it in your app config module section
 
