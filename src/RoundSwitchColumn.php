@@ -9,8 +9,6 @@ namespace nickdenry\grid\toggle;
 
 use Yii;
 use yii\grid\DataColumn;
-use yii\helpers\Html;
-use yii\web\View;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Url;
 use nickdenry\grid\toggle\assets\RoundSwitchAsset;
