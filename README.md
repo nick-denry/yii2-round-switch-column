@@ -34,4 +34,7 @@ to the require section of your `composer.json` file.
 
 Docs
 -----
+*  [Configuration](docs/configuration.md)
+*  [Advanced usage](docs/advanced-usage.md)
+*  [Overriding](docs/overriding.md)
 
