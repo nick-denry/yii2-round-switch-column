@@ -1,5 +1,11 @@
 Configuration
 ---
+
+#### Note
+
+By default your model toggle attribute should be defined as boolean.
+If you want to toggle custom values see [Advanced usage](advanced-usage.md)
+
 ### 1. Module config
 
 Counfigure module in your app config as follow:
@@ -11,7 +17,7 @@ Counfigure module in your app config as follow:
 ]
 ```
 
-### 2. Gridvew config
+### 2. GridView config
 
 Add following line to your GridView view
 ```php
@@ -24,7 +30,7 @@ and setup your toggle attribute at GridView columns section
 [
     'class' => RoundSwitchColumn::class,
     'attribute' => 'active',
-    /* other column options */
+    /* other column options, i.e. */
     'headerOptions' => ['width' => 150],
 ],
 ```
