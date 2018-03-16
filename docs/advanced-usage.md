@@ -28,6 +28,7 @@ public function actionToggleAndSend()
 
 or define another toggleAction with custom params, i.e. custom primary key
 
+```php
 public function actions()
 {
    return [
@@ -38,6 +39,7 @@ public function actions()
         ],
     ];
 }
+```
 
 ### 2. Setup custom column filter
 
