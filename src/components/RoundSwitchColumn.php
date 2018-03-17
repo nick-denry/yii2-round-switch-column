@@ -32,8 +32,8 @@ class RoundSwitchColumn extends DataColumn
     {
         if (empty($this->filter)) {
             $this->filter = [
-                "1" => Yii::t('yii', 'Yes'),
-                "0" => Yii::t('yii', 'No'),
+                '1' => Yii::t('yii', 'Yes'),
+                '0' => Yii::t('yii', 'No'),
             ];
         }
         $this->headerOptions = ArrayHelper::merge($this->headerOptions, [
