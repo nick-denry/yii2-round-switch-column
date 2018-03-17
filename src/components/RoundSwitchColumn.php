@@ -12,6 +12,7 @@ use yii\grid\DataColumn;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Url;
 use nickdenry\grid\toggle\assets\RoundSwitchAsset;
+use nickdenry\grid\toggle\assets\RoundSwitchThemeAsset;
 use nickdenry\grid\toggle\helpers\ModelHelper;
 
 /**
@@ -41,6 +42,7 @@ class RoundSwitchColumn extends DataColumn
             'data-toggle-attribute' => $this->attribute,
         ]);
         RoundSwitchAsset::register(Yii::$app->view);
+        RoundSwitchThemeAsset::register(Yii::$app->view);
         parent::init();
     }
 

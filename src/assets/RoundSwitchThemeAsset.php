@@ -7,11 +7,11 @@ use yii\web\AssetBundle;
 /**
  * Round switch asset bundle.
  */
-class RoundSwitchAsset extends AssetBundle
+class RoundSwitchThemeAsset extends AssetBundle
 {
     public $sourcePath = '@nickdenry/grid/toggle/web';
-    public $js = [
-        'js/round-switch.js',
+    public $css = [
+        'css/round-switch.css',
     ];
     public $depends = [
         'yii\web\JqueryAsset',

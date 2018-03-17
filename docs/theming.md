@@ -1,4 +1,4 @@
-Overriding
+Theming
 ---
 
 ### Preview
@@ -47,15 +47,12 @@ Add folowing lines to `components` `assetManger` section:
 ```php
     'assetManager' => [
         'bundles' => [
-            'nickdenry\grid\toggle\assets\RoundSwitchAsset' => [
+            'nickdenry\grid\toggle\assets\RoundSwitchThemeAsset' => [
                 'sourcePath' => null,
                 'basePath' => '@webroot',
                 'baseUrl' => '@web',
                 'css' => [
                     'css/round-switch.css',
-                ],
-                'js' => [
-                    'js/round-switch.js'
                 ],
             ],
         ],
@@ -63,7 +60,7 @@ Add folowing lines to `components` `assetManger` section:
     ],
 ```
 
-Copy `round-switch.css` and `round-switch.js` from 'vendor/nick-denry/yii2-round-switch-column/src/web' to application 'web'.
+Copy `round-switch.css` from 'vendor/nick-denry/yii2-round-switch-column/src/web/css' to application 'web/css'.
 
 Now you could change switch color i.e. to bootstrap primary `#428bca`
 

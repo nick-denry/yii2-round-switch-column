@@ -36,5 +36,5 @@ Docs
 -----
 *  [Configuration](docs/configuration.md)
 *  [Advanced usage](docs/advanced-usage.md)
-*  [Overriding](docs/overriding.md)
+*  [Theming](docs/theming.md)
 
