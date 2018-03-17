@@ -3,7 +3,7 @@ Advanced usage
 
 ### 1. Change action for column
 
-You colud define your own action for any toggle column like follows:
+You could define your own action for any toggle column like follows:
 
 Setup your toggle attribute at GridView columns section
 
@@ -64,8 +64,8 @@ defaut is:
 
 ```php
     'filter' => [
-        "1" => Yii::t('yii', 'Yes'),
-        "0" => Yii::t('yii', 'No'),
+        '1' => Yii::t('yii', 'Yes'),
+        '0' => Yii::t('yii', 'No'),
     ];
 ```
 
