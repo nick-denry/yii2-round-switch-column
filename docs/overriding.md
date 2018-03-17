@@ -35,6 +35,8 @@ Copy `switch.php` from your 'vendor/nick-denry/yii2-round-switch-column/src/view
 </label>
 ```
 
+@see [views overriding details](https://github.com/2amigos/yii2-usuario/blob/master/docs/enhancing-and-overriding/overriding-views.md)
+
 ### 2. Change switch color and error diplaying
 
 You could change Round Switch color by overriding its css via your application config.
