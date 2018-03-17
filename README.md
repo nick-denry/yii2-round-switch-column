@@ -27,7 +27,7 @@ php composer.phar require --prefer-dist nick-denry/yii2-round-switch-column
 or add
 
 ```
-"nick-denry/yii2-round-switch-column": "^0.1.0"
+"nick-denry/yii2-round-switch-column": "^0.1.2"
 ```
 
 to the require section of your `composer.json` file.
