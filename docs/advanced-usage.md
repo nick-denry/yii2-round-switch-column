@@ -54,8 +54,8 @@ You could change this by set up column `filter` value as usual:
     /* other column options, i.e. */
     'headerOptions' => ['width' => 150],
     'filter' => [
-        "someActive" => Active',
-        "someInactive" => 'Inactive',
+        'someActive' => 'Active',
+        'someInactive' => 'Inactive',
     ];
 ],
 ```

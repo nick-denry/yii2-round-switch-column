@@ -25,7 +25,7 @@ In your app config:
 ],
 ```
 
-Copy `switch.php` from your 'vendor/nick-denry/yii2-round-switch-column/src/views' to '@app/views/grid/toggle' and change `left` to `right` class.
+Copy `switch.php` from 'vendor/nick-denry/yii2-round-switch-column/src/views' to '@app/views/grid/toggle' and change `left` to `right` class.
 
 ```php
 <label class="yii2-round-switch right"> <!-- set left or right here -->
