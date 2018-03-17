@@ -18,7 +18,8 @@ In your app config
 'view' => [
     'theme' => [
         'pathMap' => [
-            '@nickdenry/grid/toggle/views' => '@app/views/grid/toggle' //@backend or @frontend instead @app for advanced
+            '@nickdenry/grid/toggle/views' => '@app/views/grid/toggle'
+            //@backend or @frontend instead @app for advanced
         ],
     ],
 ],
