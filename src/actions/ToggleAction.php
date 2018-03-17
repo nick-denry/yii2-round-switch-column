@@ -12,7 +12,6 @@ use nickdenry\grid\toggle\helpers\ModelHelper;
 /**
  * Class ToggleAction
  * @author Nick Denry
- * @package yii2mod\toggle\actions
  */
 class ToggleAction extends Action
 {
@@ -59,8 +58,7 @@ class ToggleAction extends Action
             $onValue = ModelHelper::getToggleValue($model, $attribute, RoundSwitchModule::SWITCH_KEY_ON);
             $offValue = ModelHelper::getToggleValue($model, $attribute, RoundSwitchModule::SWITCH_KEY_OFF);
             $model->{$attribute} = $model->{$attribute} == $onValue ? $offValue : $onValue;
-            $model->save(true, [$attribute]);
-            return $model->errors;
+            return $model->save(true, [$attribute]);
         }
         else
         {
