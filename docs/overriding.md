@@ -10,9 +10,9 @@ Overriding
 
 By default switch styles includes `left` and `right` css classes.
 
-You could override RoundSwitchColumn view to add this.
+You could override RoundSwitchColumn view to change it.
 
-In your app config
+In your app config:
 
 ```php
 'view' => [
