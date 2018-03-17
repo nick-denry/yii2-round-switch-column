@@ -82,7 +82,7 @@ public $switchValues = [
 ];
 ```
 
-Values could be any [scalar type](http://php.net/manual/en/language.types.intro.php)
+Values could be any [scalar type](http://php.net/manual/en/language.types.intro.php).
 
 You could also change `switchValues` property name by define it in your app config module section
 
