@@ -35,7 +35,7 @@ public function actions()
         'toggle-extended' => [
             'class' => ToggleAction::class,
             'modelClass' => 'common\models\Model', // Your model class,
-            'pkColumn' => 'extended_id', // default 'id'
+            'pkColumn' => 'extended_id', // 'id' by default
         ],
     ];
 }
@@ -50,7 +50,7 @@ You could change this by set up column `filter` value as usual:
 [
     'class' => RoundSwitchColumn::class,
     'attribute' => 'active',
-    'action' => 'toggle-and-send', // by default 'toggle'
+    'action' => 'toggle-and-send', // 'toggle' by default
     /* other column options, i.e. */
     'headerOptions' => ['width' => 150],
     'filter' => [
@@ -60,7 +60,7 @@ You could change this by set up column `filter` value as usual:
 ],
 ```
 
-defaut is:
+default is:
 
 ```php
     'filter' => [
@@ -84,7 +84,7 @@ public $switchValues = [
 
 Values could be any [scalar type](http://php.net/manual/en/language.types.intro.php).
 
-You could also change `switchValues` property name by define it in your app config module section
+You may also change `switchValues` property name by define it in your app config module section
 
 ```php
 'roundSwitch' => [
