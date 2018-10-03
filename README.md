@@ -5,6 +5,7 @@
     <h1 align="center">Round switch column with toggle action for yii2 GridView</h1>
     <br>
 </p>
+
 [![Latest Stable Version](https://poser.pugx.org/nick-denry/yii2-round-switch-column/version)](https://packagist.org/packages/nick-denry/yii2-round-switch-column) [![Total Downloads](https://poser.pugx.org/nick-denry/yii2-round-switch-column/downloads)](https://packagist.org/packages/nick-denry/yii2-round-switch-column) [![Latest Unstable Version](https://poser.pugx.org/nick-denry/yii2-round-switch-column/v/unstable)](//packagist.org/packages/nick-denry/yii2-round-switch-column) [![License](https://poser.pugx.org/nick-denry/yii2-round-switch-column/license)](https://packagist.org/packages/nick-denry/yii2-round-switch-column)
 
 Preview
